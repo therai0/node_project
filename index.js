@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.get("/home",(req,res)=> {
+app.get("/home/key:key",(req,res)=> {
     const key = req.params.key;
     if(key == 123) 
     {
